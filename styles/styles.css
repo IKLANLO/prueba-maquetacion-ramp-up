@@ -49,18 +49,85 @@
 }
 
 .profile_name {
-    font-size: 1.4em;
+    font-size: 1.6em;
 }
 
 .userProfile {
     display: flex;
     padding: 4em 4em 2em;
-    
 }
 
-.profile_line_1, .profile_line_2, .name {
+.profile_line_1, .profile_line_2, .name{
     display: flex;
-    width:max-content;
-    margin: 0.5em 4em;
-    background-color: pink;
+    width:100%;
+    margin: 0em 4em 1.2em;
+}
+
+.profile_line_2 {
+    display: flex;
+    justify-content:space-between;
+}
+
+.profile_line_1 > img {
+    margin-left: 1em;
+}
+
+.follow {
+    width: 7em;
+    height: auto;
+    color: white;
+    background-color: #0095F6;
+    border-style: none;
+    border-radius: 10%;
+}
+
+.profile_button {
+    background-color: #FAFAFA;
+    border: 0;
+}
+
+.storys {
+    display: flex;
+    width: 80%;
+    padding-left: 5em;
+    justify-content:space-around;
+    font-size: small;
+}
+
+.story_1 {
+    width:25%;
+}
+
+.toggle {
+    display: flex;
+    justify-content: space-around;
+    border-color: rgb(216, 209, 209);
+    border-top-style:solid;
+    border-top-width: 1px;
+    margin-top: 3em;
+    padding-left: 4em;
+}
+
+.toggle > div {
+    display: flex;
+    font-size:x-small;
+    padding: 2em;
+}
+
+.button {
+    border: 0;
+    background-color: #FAFAFA;
+    padding-right: 10%;
+}
+
+.profile_posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+}
+
+.profile_posts > div > img {
+    width:13em   ;
+    height:13em;
 }
