@@ -3,17 +3,16 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
     line-height: 24px;
 }
 
 .general {
     display: flex;
     height:2485px;
+    background-color: #FAFAFA;
 }
 
 .gris {
-    background-color: #FAFAFA;
     width: 15%;
     align-items: stretch;
     padding-top: 2%;
@@ -26,7 +25,7 @@
     flex-direction: column;
     align-content: center;
     padding: 2% 1%;
-    
+    background-color: white;
 }
 
 .frameChild > img, p{
@@ -43,4 +42,25 @@
     align-items: stretch;
     background-color: #FAFAFA;
     padding-top: 2%;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.profile_name {
+    font-size: 1.4em;
+}
+
+.userProfile {
+    display: flex;
+    padding: 4em 4em 2em;
+    
+}
+
+.profile_line_1, .profile_line_2, .name {
+    display: flex;
+    width:max-content;
+    margin: 0.5em 4em;
+    background-color: pink;
 }
