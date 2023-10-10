@@ -3,87 +3,113 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    line-height: 24px;
+    line-height: 1.5rem;
 }
 
 .general {
     display: flex;
     height:2485px;
     background-color: #FAFAFA;
-}
-
-.gris {
-    width: 15%;
-    align-items: stretch;
-    padding-top: 2%;
+    justify-content:left;
 }
 
 .frame {
-    width: 15%;
-    align-items: stretch;
+    flex-wrap: nowrap; 
     display: flex;
     flex-direction: column;
-    align-content: center;
-    padding: 2% 1%;
+    align-items:left;
     background-color: white;
+    width: 14%;
+    padding-top: 1%;
+}
+
+.info {
+    padding-top: 2%;
+}
+
+.gris{
+    width: 14%;
 }
 
 .frameChild > img, p{
     display: inline;
     margin-right: 5%;
+    min-width: fit-content;
+    flex-wrap: nowrap;
 }
 
 .frameChild{
-    margin: 8%;
-}
-
-.userProfile {
-    width: 55%;
-    align-items: stretch;
-    background-color: #FAFAFA;
-    padding-top: 2%;
+    margin: 5%;
 }
 
 .bold{
     font-weight: bold;
 }
 
-.profile_name {
-    font-size: 1.6em;
-}
-
 .userProfile {
     display: flex;
-    padding: 4em 4em 2em;
+    justify-content:left;
+    align-items:center;
+    padding: 2% 0;
+    
 }
 
-.profile_line_1, .profile_line_2, .name{
+.userProfile1 {
     display: flex;
-    width:100%;
-    margin: 0em 4em 1.2em;
+    justify-content: center;
+    width: 35%;
+}
+
+.userProfile2 {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
 }
 
 .profile_line_2 {
     display: flex;
-    justify-content:space-between;
+    width: 100%; 
 }
 
-.profile_line_1 > img {
-    margin-left: 1em;
+.profile_line_1, .profile_line_2, .name  {
+    display: flex;
 }
 
-.follow {
-    width: 7em;
-    height: auto;
-    color: white;
+.profile_name_button {
+    display: flex;
+}
+
+.follow > button {
+    margin-left: 10%;
     background-color: #0095F6;
+    padding: 0.125rem 1rem;
+    text-align: center;
+    color: white;
     border-style: none;
-    border-radius: 10%;
+    border-radius: 0.25rem;
+}
+
+.profile_name {
+    display: flex;
+    align-items: end;
+}
+
+.profile_name > p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-stretch: expanded;
+    font-weight: 350;
+}
+
+.image_more {
+    margin-left: 5%;
 }
 
 .profile_button {
     background-color: #FAFAFA;
-    border: 0;
+    width: 33%;
+    text-align: left;
+    border-style: none;
 }
 
 .storys {
@@ -92,6 +118,12 @@
     padding-left: 5em;
     justify-content:space-around;
     font-size: small;
+}
+
+.story_border {
+    border: 4px;
+    border-color: white;
+    border-radius: 50%;
 }
 
 .story_1 {
@@ -105,7 +137,8 @@
     border-top-style:solid;
     border-top-width: 1px;
     margin-top: 3em;
-    padding-left: 4em;
+    width:100%;
+    padding-left: 0em;
 }
 
 .toggle > div {
