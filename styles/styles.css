@@ -6,22 +6,65 @@
     line-height: 1.5rem;
 }
 
+@media (max-width: 600px) {
+
+    .general {
+        justify-content: left;
+        min-width: fit-content;
+        max-height: fit-content;
+    }
+
+    .frameChild > p {
+        display: none;
+    }
+
+    .frameInstagram, .frameInstagram > img{
+        width: 0;
+        height: 0;
+    }
+
+    .profile_line_2 {
+        flex-direction: column;
+    }
+
+    .profile_posts {
+        align-items: center;
+    }
+
+    .profile_posts > article {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .story_1 {
+        margin-right: 5%;
+    }
+
+    .profile_line_2 {
+        margin-top: 1%;
+    }
+  }
+
 .general {
     display: flex;
-    height:2485px;
     background-color: #FAFAFA;
-    justify-content:left;
-    padding-left: 10%;
+    justify-content:center;
+    padding-right: 10%;
+    min-width: fit-content;
+    max-height: fit-content;
 }
 
 .frame {
-    flex-wrap: nowrap; 
     display: flex;
     flex-direction: column;
     align-items:left;
     background-color: white;
-    width: 14%;
-    padding-top: 1%;
+    width: 10%;
+    padding: 2%;
+    min-width: fit-content;
 }
 
 .info {
@@ -35,12 +78,12 @@
 .frameChild > img, p{
     display: inline;
     margin-right: 5%;
-    min-width: fit-content;
-    flex-wrap: nowrap;
+    width: fit-content;
 }
 
 .frameChild{
     margin: 5%;
+    white-space: nowrap;
 }
 
 .bold{
@@ -145,10 +188,20 @@
     padding-left: 0em;
 }
 
-.toggle > div {
+.toggle_selected {
+    border-top-color: black;
+    border-top-style: solid;
+    border-top-width:thin;
+}
+
+.toggle > article {
     display: flex;
     font-size:x-small;
     padding: 2em;
+}
+
+.toggle > article > p {
+    color: rgb(189, 186, 186);
 }
 
 .button {
@@ -157,33 +210,40 @@
     padding-right: 10%;
 }
 
-.profile_posts {
+.profile_posts > article{
+    white-space:nowrap;
     display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: stretch;
+    
 }
 
-.profile_posts > div > img {
-    width:13em   ;
+.profile_posts > article > img {
+    width:13em;
     height:13em;
 }
 
 .footer {
     display: flex;
     flex-direction: column;
-    padding: 2% 10%;
+    padding: 2% 8% 4% 12%
 }
 
 .footer_1, .footer_2 {
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 
 .footer_1 > li, .footer_2 > li {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0.6rem;
-    padding: 0 1%;
     color: #8E8E8E;
+}
+
+.footer_1 > li {
+    padding-right: 2%;
+}
+
+.footer_2_icon {
+    padding: 0 5% 5% 1%
 }
